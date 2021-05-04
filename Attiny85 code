@@ -19,5 +19,5 @@ void loop(){
   if(pw < a){pw++;} analogWrite(0,pw); delay(5);}
 void shutdown(){ 
   for(int x = 0; x < 200; x++)
-  {PORTB = PORTB ^ 2; delayMicroseconds(63);} 
+  {PORTB = PORTB ^ 2; delayMicroseconds(32);} 
   delay (20);shutdown();}  
